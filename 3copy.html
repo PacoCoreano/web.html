@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB - JavaScript</title>
+<meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+
+  <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night') {
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+      document.querySelector('#night_day').value= 'day';
+
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+          console.log(alist[i]);
+          alist[i].style.color = 'white';
+          i = i + 1;
+      }
+
+    } else {
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+      document.querySelector('#night_day').value= 'night';
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length){
+          console.log(alist[i]);
+          alist[i].style.color = 'black';
+          i = i + 1;
+      }
+
+    }
+  ">
+
+구별로 나누고, 대여소별로 띄우고, 예측값
+
+  <br>
+  <br>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>JavaScript</h2>
+      <img src="img/javascript.jpg" width="500" height="300">
+      <br>
+      <br>
+      <p>
+        JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,2​ basado en prototipos, imperativo, débilmente tipado y dinámico. Se utiliza principalmente del lado del cliente, implementado como parte de un navegador web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas3​ y JavaScript del lado del servidor (Server-side JavaScript o SSJS). Su uso en aplicaciones externas a la web, por ejemplo en documentos PDF, aplicaciones de escritorio (mayoritariamente widgets) es también significativo. Desde 2012, todos los navegadores modernos soportan completamente ECMAScript 5.1, una versión de JavaScript. Los navegadores más antiguos soportan por lo menos ECMAScript 3. La sexta edición se liberó en julio de 2015. Todos los navegadores modernos interpretan el código JavaScript integrado en las páginas web. Para interactuar con una página web se provee al lenguaje JavaScript de una implementación del Document Object Model (DOM). Tradicionalmente se venía utilizando en páginas web HTML para realizar operaciones y únicamente en el marco de la aplicación cliente, sin acceso a funciones del servidor. Actualmente es ampliamente utilizado para enviar y recibir información del servidor junto con ayuda de otras tecnologías como AJAX. JavaScript se interpreta en el agente de usuario al mismo tiempo que las sentencias van descargándose junto con el código HTML. Desde el lanzamiento en junio de 1997 del estándar ECMAScript 1, han existido las versiones 2, 3 y 5, que es la más usada actualmente (la 4 se abandonó5​). En junio de 2015 se cerró y publicó la versión ECMAScript 6.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+
+<parent>
+  <child></child>
+</parent>
